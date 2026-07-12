@@ -116,7 +116,7 @@ The command showed the NginX HTML page which shows that the web server is workin
 Lastly, I opened the website using the EC2 public IP address.
 
 ```
-http://54.169.64.25:8080
+http://54.169.64.255:8080
 ```
 
 I was greeted by the Nginx welcome page in the browser which also confirmed that the container was running correctly.
