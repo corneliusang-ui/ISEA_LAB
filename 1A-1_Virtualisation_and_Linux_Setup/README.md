@@ -24,6 +24,8 @@ The aim of this activity was to:
 
 VMware Workstation was installed.
 
+<img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/0c83f5ff-59ff-4d97-aa26-367adbb50cdf" />
+
 ---
 
 ### 2. Ubuntu ISO Downloaded
