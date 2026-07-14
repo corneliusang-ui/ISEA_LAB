@@ -176,6 +176,8 @@ ls ~
 
 ## Deliverables 10-14 have been completed in Assignment 1A-2
 
+https://github.com/corneliusang-ui/ISEA_LAB/blob/main/1A-2%20Ubuntu%20Desktop%20and%20Command%20Line%20Familiarisation/README.md
+
 ---
 
 # Conclusion 
