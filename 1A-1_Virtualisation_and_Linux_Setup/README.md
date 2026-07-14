@@ -32,11 +32,15 @@ VMware Workstation was installed.
 
 The Ubuntu ISO was downloaded from the official Ubuntu Website.
 
+<img width="403" height="499" alt="image" src="https://github.com/user-attachments/assets/ae6e242d-ee66-49af-87e4-2f436f5fbbaf" />
+
 ---
 
 ### 3. New Virtual Machine Created
 
 The new VM was created with the required settings and the Ubuntu ISO was configured before installation.
+
+<img width="750" height="721" alt="image" src="https://github.com/user-attachments/assets/85b7d410-335f-40a4-b79b-93732f24ba77" />
 
 ---
 
@@ -44,17 +48,23 @@ The new VM was created with the required settings and the Ubuntu ISO was configu
 
 Ubuntu was installed successfully and booted into the desktop after restarting the VM.
 
+<img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/afc807a6-5d52-4fd4-9871-7d5b56b9d5bd" />
+
 ---
 
 ### 5. Network Configured
 
 The VM was configured using NAT.
 
+<img width="750" height="725" alt="image" src="https://github.com/user-attachments/assets/f2588ad4-55aa-40be-85f3-5ee2ed2a8758" />
+
 ---
 
 ### 6. Ubuntu Running
 
 Ubuntu is successfully running and the terminal was accessible.
+
+<img width="2326" height="1347" alt="image" src="https://github.com/user-attachments/assets/e7cdb2b7-c8ab-4e4e-a46f-614be7c3933e" />
 
 ---
 
@@ -68,6 +78,7 @@ Commands used:
 sudo apt update
 sudo apt install virtualbox-guest-utils virtualbox-guest-x11
 ```
+<img width="1131" height="1077" alt="image" src="https://github.com/user-attachments/assets/aed1b558-b80f-462b-8d59-af1c76fd326c" />
 
 ---
 
@@ -81,6 +92,8 @@ Commands used:
 sudo apt install openssh-server
 sudo systemctl status ssh
 ```
+
+<img width="1092" height="394" alt="image" src="https://github.com/user-attachments/assets/87d65ce4-917e-4c48-8382-bd5aac0acecc" />
 
 ---
 
