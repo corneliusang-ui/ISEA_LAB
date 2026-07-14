@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains my server services implementation, including Docker,
+This repository contains my lab assignments and server services implementation.
 
 ## Project Progress
 
