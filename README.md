@@ -9,7 +9,7 @@ web servers, security, automation, databases, and monitoring.
 
 | Service | Status |
 |---|---|
-| Docker | In Progress |
+| Docker | Complete|
 
 
 ## Repository Structure
