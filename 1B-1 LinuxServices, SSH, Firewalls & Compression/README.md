@@ -1,22 +1,27 @@
 # 1B-1: Linux Services, SSH, Firewalls & Compression
 
 ## Overview
-This folder contains materials related to Linux Services, SSH configuration, Firewalls, and Compression techniques.
 
-## Topics Covered
-- **Linux Services**: Understanding and managing system services
-- **SSH**: Secure Shell configuration and best practices
-- **Firewalls**: Firewall configuration and management
-- **Compression**: Data compression tools and techniques
-
-## Contents
-- Documentation
-- Configuration examples
-- Scripts and utilities
-- Practice exercises
-
-## Getting Started
-Add your materials and documentation to this folder following the structure above.
+This objective introduces set up and explore Apache, SSH, and UFW firewall services in Ubuntu, perform port scanning and file transfer over SSH, and practice compression and decompression using tar, bzip2, and scp. 
 
 ---
-*Part of the ISEA_LAB repository*
+
+# Deliverables
+
+## 1. Apache Web Server Installed
+
+Apache Web Server was installed using the APT package manager.
+
+Commands used:
+
+```bash
+sudo apt update
+sudo apt install apache2
+sudo systemctl status apache2
+```
+
+Verification:
+
+```
+http://127.0.0.1
+```
