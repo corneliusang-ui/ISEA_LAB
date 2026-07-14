@@ -1,16 +1,24 @@
 # 1B-3 File Extraction, Searching & Pattern Analysis (Gutenberg Archive)
 
-This folder contains materials and resources related to file extraction, searching, and pattern analysis using the Gutenberg Archive.
+## Overview
 
-## Contents
+Learn to extract compressed archives and apply advanced command-line file search techniques (by filename, content, date, size) to solve real problems on a Linux filesystem. 
 
-- File extraction techniques and tools
-- Search methodologies for text analysis
-- Pattern analysis and matching
-- Gutenberg Archive resources
-- Practical examples and use cases
-- Data processing guidelines
+ ---
 
-## Getting Started
+ # Deliverables
 
-For more information on file extraction and pattern analysis, refer to the Gutenberg Archive documentation and text processing best practices.
+ ## 1. Archive Extracted Successfull
+
+ The compressed Gutenberg archive was decompressed and extracted successfully.
+
+ Commands used:
+
+ ```bash
+bunzip2 Gutenberg.tar.bz2
+
+tar -xvf Gutenberg.tar
+```
+
+The extracted files were successfully restored into the directory.
+
