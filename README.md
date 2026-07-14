@@ -10,11 +10,7 @@ web servers, security, automation, databases, and monitoring.
 | Service | Status |
 |---|---|
 | Docker | In Progress |
-| Web Server | Planned |
-| SSL Certificate | Planned |
-| Linux Scripts | Planned |
-| Database | Planned |
-| Monitoring | Planned |
+
 
 ## Repository Structure
 
