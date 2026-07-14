@@ -92,13 +92,16 @@ Commands used:
 sudo apt install openssh-server
 sudo systemctl status ssh
 ```
+
+<img width="1101" height="1221" alt="image" src="https://github.com/user-attachments/assets/9a874cb5-865f-4c57-88e0-2c2385ee141d" />
+
 Command to verify SSH is working:
+
+<img width="1047" height="257" alt="image" src="https://github.com/user-attachments/assets/52e811d7-0160-4d0c-ab8f-5468100577f1" />
 
 ```bash
 sudo systemctl status ssh.socket
 ```
-
-<img width="1092" height="394" alt="image" src="https://github.com/user-attachments/assets/87d65ce4-917e-4c48-8382-bd5aac0acecc" />
 
 ---
 
