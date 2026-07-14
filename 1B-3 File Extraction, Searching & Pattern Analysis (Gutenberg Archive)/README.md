@@ -143,6 +143,8 @@ Command used:
 sed 's/ /\n/g' frankenstein.txt
 ```
 
+<img width="774" height="269" alt="image" src="https://github.com/user-attachments/assets/2441bedc-0805-4230-825e-118ed626adc2" />
+
 ## 10. Answers to Questions Provided
 
 Deliverable not done because all questions has nothing to do with the given Guternberg zip folder.
