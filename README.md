@@ -15,6 +15,18 @@ This repository contains my lab assignments and server services implementation.
 
 - docker/ - Docker setup and containers
 
+## 🖥️ Tools & Platforms
+
+- VMware Workstation
+- Ubuntu Desktop
+- Ubuntu Server
+- Amazon EC2
+- AWS Management Console
+- Visual Studio Code
+- GitHub
+- Docker Desktop
+- Terminal / Bash
+
 ## 🛠️ Technologies Used
 
 ### Operating Systems
