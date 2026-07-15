@@ -8,7 +8,17 @@ This repository contains my lab assignments and server services implementation.
 
 | Service | Status |
 |---|---|
-| Docker | Complete|
+| 1A-1 | Complete |
+| 1A-2 | Complete |
+| 1B-1 | Complete |
+| 1B-2 | Complete |
+| 1B-3 | Complete |
+| 2A-1 | Complete |
+| 2B-1 | Complete |
+| 2B-2 | Complete |
+| 3A-1 | Complete |
+| 3B-1 | Complete |
+| Docker | Complete |
 
 
 ## Repository Structure
