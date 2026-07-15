@@ -138,6 +138,8 @@ chmod 777 system_info.sh
 ./system_info.sh
 ```
 
+<img width="1083" height="613" alt="image" src="https://github.com/user-attachments/assets/04a7effa-0724-4ed3-8f09-20d376e27749" />
+
 <img width="844" height="37" alt="image" src="https://github.com/user-attachments/assets/b99aa3ad-c8d2-4399-95c8-3fdc656f2c03" />
 
 <img width="696" height="272" alt="image" src="https://github.com/user-attachments/assets/e144b89d-b07e-4a1e-ac55-fe2c95757ea7" />
