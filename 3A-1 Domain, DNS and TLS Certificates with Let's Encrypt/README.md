@@ -108,6 +108,8 @@ https://corneliusisea.duckdns.org
 
 Certificate was issued by Let's Encrypt
 
+<img width="557" height="659" alt="image" src="https://github.com/user-attachments/assets/1ad450a5-564d-45cf-a94b-86d4c6ac0421" />
+
 ---
 
 ## 4. HTTPS with Lock Icon
