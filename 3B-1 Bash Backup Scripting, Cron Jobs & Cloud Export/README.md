@@ -1,54 +1,190 @@
 # Bash Backup Scripting, Cron Jobs & Cloud Export
 
-This folder contains resources and documentation for learning about bash scripting for backups, scheduling automated tasks with cron, and exporting data to cloud storage.
-
 ## Overview
 
-This module covers the fundamentals of creating reliable backup scripts in bash, automating backup schedules using cron jobs, and managing cloud exports for data protection and disaster recovery. You'll learn how to write efficient backup scripts, schedule them for automatic execution, and integrate cloud storage solutions.
+Write a Bash script that creates a dated ZIP backup of the /home/ubuntu/Documents directory every hour using cron, and optionally exports it to a remote cloud server using scp. 
 
-## Contents
+---
 
-- Bash scripting fundamentals for backups
-- File and directory backup strategies
-- Incremental and full backup techniques
-- Cron job scheduling and syntax
-- Backup automation best practices
-- Cloud storage integration (AWS S3, Google Cloud Storage, Azure Blob)
-- Data compression and encryption
-- Error handling and logging
-- Backup verification and restoration
-- Cloud export workflows
+# Deliverables
 
-## Getting Started
+## 1. Practice Bash Commands Executed
 
-[Add specific instructions and resources here]
+Bash commands were used to familiarise with shell scripting.
 
-## Key Topics
+### Commands used
 
-- Bash scripting basics for system administration
-- File system backup methods
-- Tar archives and compression (gzip, bzip2, xz)
-- Database backup strategies (MySQL, PostgreSQL, MongoDB)
-- Cron daemon and crontab syntax
-- Scheduling periodic backups
-- Systemd timers as cron alternatives
-- AWS S3 CLI operations
-- Google Cloud gsutil commands
-- Azure Storage account access
-- Data encryption for backups
-- Backup retention policies
-- Monitoring and alerting for failed backups
-- Disaster recovery testing
-- Performance optimization for large backups
+```bash
+echo "Hello World"
 
-## References
+name="Cornelius"
+echo $name
 
-- [GNU Coreutils Documentation](https://www.gnu.org/software/coreutils/manual/)
-- [Linux Cron Tutorial](https://www.man7.org/linux/man-pages/man5/crontab.5.html)
-- [Bash Guide for Beginners](https://tldp.linux.org/LDP/Bash-Beginners-Guide/html/)
-- [AWS S3 CLI Documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3.html)
-- [Google Cloud Storage gsutil](https://cloud.google.com/storage/docs/gsutil)
-- [Azure CLI Documentation](https://docs.microsoft.com/en-us/cli/azure/)
-- [Backup and Recovery Best Practices](https://en.wikipedia.org/wiki/Backup)
-- [Linux System Administration Handbook](https://www.oreilly.com/library/view/linux-system-administration/9781491941967/)
+num1=10
+num2=20
+echo $((num1 + num2))
+
+sum=0
+
+for i in {1..10}
+do
+    sum=$((sum+i))
+done
+
+echo $sum
+```
+
+<img width="721" height="366" alt="image" src="https://github.com/user-attachments/assets/9de26ee7-67a1-48e7-9514-c54da8edfa0c" />
+
+---
+
+## 2. Test Files & Directories Created 
+
+Files were created inside the documents folder.
+
+### Commands used
+
+```bash
+mkdir -p ~/Documents/LabFiles
+
+touch ~/Documents/LabFiles/file1.txt
+touch ~/Documents/LabFiles/file2.txt
+touch ~/Documents/LabFiles/file3.txt
+
+mkdir ~/Documents/Reports
+
+touch ~/Documents/Reports/report1.txt
+```
+
+<img width="604" height="351" alt="image" src="https://github.com/user-attachments/assets/04d7473b-355f-47c9-9487-862defc6c52c" />
+
+---
+
+## 3. Basic Script Working
+
+Bash script named 'testscript' was create and tested.
+
+Bash script created
+
+<img width="1076" height="714" alt="image" src="https://github.com/user-attachments/assets/c672d1c8-68f5-49d6-ac62-1f029adbc665" />
+
+### Script Features
+
+- Created a backup folder
+- Copies all files recursively
+- Displays completion message
+
+Commands used:
+
+```bash
+mkdir -p /home/ubuntu/backup
+
+cp -r /home/ubuntu/Documents/* /home/ubuntu/backup/
+
+sudo chmod 777 testscript
+```
+
+<img width="678" height="309" alt="image" src="https://github.com/user-attachments/assets/f433456f-d250-43da-a702-4f5afd479342" />
+
+---
+
+## 4. Script Installed as System Command
+
+Output shows:
+
+- Script moved to /usr/bin/testscript 
+- sudo chown applied 
+- Testscript works from any directory
+
+### Commands used
+
+```bash
+sudo mv testscript /usr/bin/
+
+sudo chown root:root /usr/bin/testscript
+
+sudo chmod 755 /usr/bin/testscript
+```
+
+<img width="1047" height="407" alt="image" src="https://github.com/user-attachments/assets/e3a35451-6f5e-4b6e-8476-3ebf97e4fe19" />
+
+---
+
+## 5. ZIP Archive with Date Filename
+
+The script was updated to compress the backup folder into a ZIP file.
+
+Command used:
+
+```bash
+now=$(date +"%d_%m_%y")
+
+zip -r /home/ubuntu/$now.zip /home/ubuntu/backup
+```
+
+<img width="783" height="199" alt="image" src="https://github.com/user-attachments/assets/bdbe9854-b54d-4dd4-8692-fdda882b71cb" />
+
+<img width="685" height="14" alt="image" src="https://github.com/user-attachments/assets/b69c3a00-1e61-42bb-a40f-176ab54b9c90" />
+
+---
+
+## 6. Cronjob Set Up for Daily Backup
+
+The backup script was scheduled to run automatically everyday.
+
+Cron entry:
+
+```cron
+9 * * * *  ubuntu /usr/bin/testscript
+```
+
+<img width="1073" height="536" alt="image" src="https://github.com/user-attachments/assets/cbadef0a-7aca-48d4-9477-ce6770b60ac0" />
+
+---
+
+## 7. Successful Cron Execution Verified
+
+Cron successfully execueted the script.
+
+<img width="652" height="65" alt="image" src="https://github.com/user-attachments/assets/816a9c9a-7486-4d3c-b083-459ab3d24b54" />
+
+---
+
+## 8. SCP to Cloud Working
+
+SCP was used to transfer the backup archive to another Linux server.
+
+Command used:
+
+```bash
+scp -i /home/ubuntu/aws-ubuntu-key.pem \
+/home/ubuntu/$now.zip \
+ubuntu@13.229.243.48/home/ubuntu/
+```
+
+<img width="2358" height="1328" alt="image" src="https://github.com/user-attachments/assets/46f8d05b-5eff-4dda-9b86-6a7c57b5c9f1" />
+
+---
+
+## 9. SSH Certificate Accepted by Root
+
+SSH key fingerprint was accepted
+
+<img width="2358" height="1328" alt="image" src="https://github.com/user-attachments/assets/eda524a9-eeb2-4bad-86fb-2a8c8d739442" />
+
+---
+
+## 10. Final Script Submitted
+
+The completed backup script performs the following tasks:
+
+<img width="816" height="375" alt="image" src="https://github.com/user-attachments/assets/bba09e77-1e83-458d-b971-3cfff5a69f8f" />
+
+---
+
+# Reflection
+
+This activity demonstrated how Bash scripting can automate repetitive system administration tasks. I learnt how to use variables, loops, and arithmetic operations within shell scripts, automate file backups, compress files into ZIP archives, schedule tasks using Cron, and securely transfer files between Linux servers using SCP. These techniques improve efficiency, reduce manual effort, and form the foundation of automated backup solutions commonly used in Linux system administration.
+
+
 
