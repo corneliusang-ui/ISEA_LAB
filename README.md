@@ -6,7 +6,7 @@ This repository contains my lab assignments and server services implementation.
 
 ## Project Progress
 
-| Service | Status |
+| Assignments | Status |
 |---|---|
 | 1A-1 | Complete |
 | 1A-2 | Complete |
