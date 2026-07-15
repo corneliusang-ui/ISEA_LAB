@@ -20,11 +20,6 @@ This repository contains my lab assignments and server services implementation.
 | 3B-1 | Complete |
 | Docker | Complete |
 
-
-## Repository Structure
-
-- docker/ - Docker setup and containers
-
 ## 🖥️ Tools & Platforms
 
 - VMware Workstation
